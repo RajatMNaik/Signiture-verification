@@ -12,7 +12,7 @@ void setup() {
   float [][] sign1=fun(img1);
   float [][] sign2=fun(img2);
 
-  float zum = cosi(  sign1 , sign2); // got  help for function calling 
+  float zum = cosi(  sign1 , sign2); 
   println("cosine  =", zum );
   
 }

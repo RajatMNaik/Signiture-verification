@@ -1,3 +1,7 @@
+/*
+  This Processing sketch compares two images using edge detection and calculates their cosine similarity.
+*/
+
 void setup() {
 
   PImage img1;
@@ -27,7 +31,7 @@ float[][] fun (PImage img) {
     { 1, 2, 1 }};
 
   float[][] mat = new float [81][4] ;              
-
+ // Edge detection
   for (int y = 1; y < img.height-1; y++) 
     for (int x = 1; x < img.width-1; x++) {
 
@@ -45,7 +49,7 @@ float[][] fun (PImage img) {
 
 
       // pixels[y*img.width + x] = gxy;
-
+// Calculate theta
       if (gx>0)
 
       {
